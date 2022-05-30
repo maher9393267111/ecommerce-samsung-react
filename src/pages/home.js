@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import {motion} from 'framer-motion';
 const Home = () => {
 const [activated, setActivated] = useState(false);
 
@@ -68,7 +69,20 @@ className='top'></span>
 
 
 <div className='animate-ovelay-items'>
-gfg
+
+<motion.div
+
+animate={{ x: activated ? 0 : -220, opacity: activated ? 1 : 0 }}
+transition={{ duration: 0.5, ease: "easeInOut" }}
+
+
+>
+
+helo maher
+</motion.div>
+
+
+
 
 
 </div>
