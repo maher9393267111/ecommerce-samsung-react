@@ -1,30 +1,27 @@
 import React from 'react';
 import { useContext } from 'react';
-import {HomeContext} from "../../context/index";				
+import {HomeContext} from "../../context/index";
+import Navbar from "../../components/navbar";				
 const Home = () => {
 
     const { name,setName } = useContext(HomeContext);	
     
-    // change name
-
-    const changeName = () => {
-        setName("majd");
-
-    }
+  
 
 
 
     return (
         <div>
+<div>
 
-<button
+<Navbar/>
 
-onClick={ changeName }
->change name</button>
+</div>
 
 
-            {name}
-            
+
+
+
         </div>
     );
 }
