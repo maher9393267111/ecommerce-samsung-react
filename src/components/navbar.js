@@ -7,6 +7,19 @@ const Navbar = () => {
     const { currentparentmenu, setCurrentparentmenu } = useContext(HomeContext);	
 
 
+// after 5second when mouse leve reset currentparentmenu
+
+const resetmenu = () => {
+
+    setTimeout(() => {
+
+        setCurrentparentmenu('');
+
+    }, 90000);
+
+}
+
+
   return (
     <div className=" h-[75px]  shadow-2xl">
       <div>
@@ -58,7 +71,7 @@ return (
 
     <p
     onMouseEnter={()=>{ setCurrentparentmenu(item.name)} }
-    onMouseLeave={()=>{ setCurrentparentmenu('')} }
+    onMouseLeave={ resetmenu }
     
     
     className=" font-semibold  hover:bg-black hover:text-white transition-all hover:text-center duration-300 hover:w-[80px]">
