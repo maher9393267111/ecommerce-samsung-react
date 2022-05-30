@@ -4,13 +4,13 @@ import {HomeContext} from "../context/index";
 import {parentmenu  }   from '../pages/home/data'
 const Navbar = () => {
 
-    const { name,setName } = useContext(HomeContext);	
+    const { currentparentmenu, setCurrentparentmenu } = useContext(HomeContext);	
 
 
   return (
     <div className=" h-[75px]  shadow-2xl">
       <div>
-          {name}
+          {/* {currentparentmenu} */}
         {/* -grid- */}
 
         <div className=" self-center grid grid-cols-12 gap-4  content-center h-[75px]  ">
@@ -57,7 +57,8 @@ return (
 <li>
 
     <p
-    onMouseEnter={()=>{ setName(item.name)} }
+    onMouseEnter={()=>{ setCurrentparentmenu(item.name)} }
+    onMouseLeave={()=>{ setCurrentparentmenu('')} }
     
     
     className=" font-semibold  hover:bg-black hover:text-white transition-all hover:text-center duration-300 hover:w-[80px]">

@@ -4,7 +4,7 @@ import {HomeContext} from "../../context/index";
 import Navbar from "../../components/navbar";				
 const Home = () => {
 
-    const { name,setName } = useContext(HomeContext);	
+    const { name,setName,filtredchildmenu } = useContext(HomeContext);	
     
   
 
@@ -15,6 +15,27 @@ const Home = () => {
 <div>
 
 <Navbar/>
+
+
+{filtredchildmenu.length}
+
+{filtredchildmenu.map((item,index)=>{
+
+return (
+
+<div>
+
+<h1>
+{item.name}
+{item.parentmenu}
+</h1>
+
+</div>
+
+
+)})}
+
+
 
 </div>
 

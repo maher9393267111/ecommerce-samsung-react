@@ -28,30 +28,30 @@ export const childmenu = [
   //    -mobilke childrens----
   {
     id: "1434",
-    parentmenu: "mobile",
+    parentmenu: "mobiles",
     name: "one cikanlar",
   },
 
   {
     id: "1545",
-    parentmenu: "mobile",
+    parentmenu: "mobiles",
     name: "akilli telefonlar",
   },
   {
     id: "15667",
-    parentmenu: "mobile",
+    parentmenu: "mobiles",
     name: "tabletler",
   },
 
   {
     id: "165634",
-    parentmenu: "mobile",
+    parentmenu: "mobiles",
     name: "aksesuarlar",
   },
 
   {
     id: "1890",
-    parentmenu: "mobile",
+    parentmenu: "mobiles",
     name: "galaxy buds",
   },
 
@@ -59,23 +59,23 @@ export const childmenu = [
 
   {
     id: "12390",
-    parentmenu: "tv",
+    parentmenu: "Tv",
     name: "one cikanlar",
   },
   {
     id: "54534",
-    parentmenu: "tv",
+    parentmenu: "Tv",
     name: "tvler",
   },
   {
     id: "17734",
-    parentmenu: "tv",
+    parentmenu: "Tv",
     name: "lifestyle tvler",
   },
 
   {
     id: "149974",
-    parentmenu: "tv",
+    parentmenu: "Tv",
     name: "projektorler",
   },
 
