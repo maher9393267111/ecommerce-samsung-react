@@ -7,7 +7,7 @@ const Main= () => {
         <div>
             
 <div>
-
+'fix created but not merge now'
 <nav>
    <ul className="menus gap-8 flex">
     {menuItems.map((menu, index) => {
