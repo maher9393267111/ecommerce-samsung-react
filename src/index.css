@@ -26,11 +26,15 @@ code {
 
  .menu-toggle > span  {
 
-  @apply h-[7px]  w-[44px] absolute     bg-teal-500 transition-all duration-500 ease-in-out;
+  @apply h-[7px]  w-[44px] absolute     bg-black z-10 transition-all duration-500 ease-in-out;
 
  }
 
+.menu-toggle{
 
+  cursor: pointer;
+  z-index: 100;
+}
 
 
 
@@ -96,9 +100,9 @@ opacity: 0;
   
 
 .animate-ovelay-items{
-
-  animation: fadeInRight .5s ease forwards;
-  animation-delay: .35s;
+  animation:fadeInRight .9s linear;
+  
+  animation-delay: 1.5s;
 position: absolute;
 
 }
@@ -111,8 +115,27 @@ position: absolute;
     left: 55%;
     top: 100px;
   }
+  55% {
+    opacity: 0;
+    right:300px;
+    top: 100px;
+  }
   100% {
     opacity: 1;
-    left: 0;
+    left: 33px;
+  }
+}
+
+
+
+@keyframes blinking{
+  0%{
+    transform: translateX(-100px);
+  }
+  50%{
+    transform: translateX(50px);;
+  }
+  100%{
+    transform: translateX(0px);;
   }
 }
