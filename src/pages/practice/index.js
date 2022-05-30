@@ -9,7 +9,7 @@ const Main= () => {
 <div>
 
 <nav>
-   <ul className="menus">
+   <ul className="menus gap-8 flex">
     {menuItems.map((menu, index) => {
      return <MenuItems items={menu} key={index} />;
     })}

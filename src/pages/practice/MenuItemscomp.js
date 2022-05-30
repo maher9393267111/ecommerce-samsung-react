@@ -7,15 +7,23 @@ const MenuItems = ({ items }) => {
 
 
  return (
-  <li className="menu-items">
+  <li className="menu-items group  ">
    {items.submenu ? (
     <>
      <button type="button" 
+     className=" "
      
-     aria-expanded={dropdown ? "true" : "false"}
-     onClick={() => setDropdown((prev) => !prev)}
+    //  aria-expanded={dropdown ? "true" : "false"}
+     //onClick={() => setDropdown(!dropdown)}
+    //  onMouseEnter={() => setDropdown((prev) => !prev)}
+    //  onMouseLeave={() => setDropdown((prev) => !prev)}
      
-     aria-haspopup="menu">
+     aria-haspopup="menu"
+     
+     // when hover in class set to true
+  //  className= {` ${'hover:' ? setDropdown(true) : setDropdown(false)}`}
+  //className=    {` hover:${setDropdown(true)}`}
+  >
       {items.title}{" "}
      </button>
      <Dropdown submenus={items.submenu}

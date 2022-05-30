@@ -1,17 +1,26 @@
 export const menuItems = [
     //...
     {
-     title: "Services",
+     title: "mobile",
      submenu: [
       {
-       title: "web design"
+       title: "onecikanlar"
       },
       {
-       title: "web development",
+       title: "akilli telefonlar",
       },
       {
-       title: "SEO"
-      }
+       title: "tabletler"
+      },
+
+      {
+        title: "gyyilibiler cihazlar"
+       }, {
+        title: "Galaxy Buds"
+       }, {
+        title: "aksesuarlar"
+       },
+
      ]
     },
     
@@ -21,17 +30,23 @@ export const menuItems = [
 
 
 {
-    title: "Home",
+    title: "Tv ",
     submenu: [
      {
-      title: "web design"
+      title: "Tvler"
      },
      {
-      title: "web development",
+      title: "Life style",
      },
      {
-      title: "SEO"
-     }
+      title: "Projektoler"
+     },
+     {
+        title: "soundbarlar",
+       },  {
+        title: "boutlarina gore tvler",
+       }, 
+       
     ]
    },
    
@@ -41,17 +56,28 @@ export const menuItems = [
 
 
 {
-    title: "about",
+    title: "Ev Aletleri && klima",
     submenu: [
      {
-      title: "web design"
+      title: "Onecikanlar"
      },
      {
-      title: "web development",
+      title: "Buzdolaplari",
      },
      {
-      title: "SEO"
-     }
+      title: "pisirme Aletleri"
+     },
+
+     {
+        title: "gyisi temizligi"
+       },   
+        {
+        title: "bulasik makineleri"
+       },
+       {
+        title: "klima sisitemleri"
+       },
+
     ]
    },
    
