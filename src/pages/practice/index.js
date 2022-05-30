@@ -7,7 +7,7 @@ const Main= () => {
         <div>
             
 <div>
-
+'fix created'
 <nav>
    <ul className="menus">
     {menuItems.map((menu, index) => {
