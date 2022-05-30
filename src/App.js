@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home';
-import Main from './pages/practice';
+import Home from './pages/home';
+
 
 function App() {
   return (
@@ -9,9 +9,9 @@ function App() {
      
 
 <div>
-  {/* <Home/> */}
+  <Home/>
 
-<Main/>
+
 
 
 </div>
