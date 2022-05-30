@@ -7,7 +7,7 @@ const Main= () => {
         <div>
             
 <div>
-'fix created'
+'fix created but not merge now'
 <nav>
    <ul className="menus">
     {menuItems.map((menu, index) => {
