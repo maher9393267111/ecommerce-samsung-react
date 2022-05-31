@@ -9,6 +9,7 @@ const CoursesSlider = () => {
 // if screen is md and sm show only 30 letters of description
  
 const [show,setShow]=useState(false)
+const [title,setTitle]=useState('')
 
 useEffect(()=>{
 
@@ -71,7 +72,7 @@ useEffect(()=>{
 
 
     return (
-        <div className=' mb-28 pb-20'>
+        <div className=' mb-4 pb-20'>
             
 <div>
 
@@ -89,7 +90,7 @@ useEffect(()=>{
 
 <div className=' mt-6'>
 
-<div className=' border-b-2 w-[88%] pb-4 flex gap-6 font-semibold text-[15px]'>
+<div className='  border-b-2 w-[88%] pb-4 flex gap-6 font-semibold text-[15px]'>
 
 <h3
 
@@ -116,7 +117,7 @@ className='relative after:absolute after:bg-slate-900 after:text-white after:rou
 
 <div>
    
-<div className=' container border-2 w-[80%] h-[300px] mb-[100px]'>
+<div className=' container border-2 w-[80%]  mb-[100px]'>
 
 
 <div className=' ml-[33px] mt-6'>
@@ -131,7 +132,7 @@ className='relative after:absolute after:bg-slate-900 after:text-white after:rou
 {/* ---image- */}
 
 
-<div className='w-[90%]'>
+<div className='w-[90%] group'>
     <img className='w-full' src={course.image} alt="" />
     <div>
        
@@ -150,13 +151,157 @@ className='relative after:absolute after:bg-slate-900 after:text-white after:rou
 {/* -instuctor- */}
 
 <div>
-  <p className=' text-sm'>
+  <p className=' text-[#808080] text-sm'>
     {course.instructor}
   </p>
 </div>
 
 
+{/* -stars- */}
+
+
+<div className=' gap-4 h-[20px] flex'>
+
+<span
+className=' font-bold text-orange-400'
+>4.5</span>
+<span
+className=' relative top-[-17px]'
+
+>
+<div>
+  <img
+  className='w-16 h-16'
+  src="https://cdn4.iconfinder.com/data/icons/infographics-2-1/512/5_stars-256.png" alt="" />
 </div>
+
+</span>
+
+<span
+className='sm:text-sm lg:text-md'
+>Students {course.students}</span>
+</div>
+
+
+</div>
+
+
+{/* -price */}
+
+<div className=' flex gap-8'>
+
+  <h1 className=' mt-4'>
+    {course.price}
+  </h1>
+
+<h1
+className='mt-4 relative
+after:absolute after:h-[2px]
+after:w-[55px]
+after:bg-orange-500
+after:top-[11px]
+after:left-[1px]
+'
+>
+  {course.oldprice}
+</h1>
+
+</div>
+
+
+{/* ------cart description absolute- */}
+
+<div className=' relative invisible group-hover:visible '>
+
+<div  className=' absolute  w-[300px] h-[300px] bg-white transition-all duration-500   ease-in-out
+top-[-288px] border-t-0 border-t-black  z-10  left-[2px] 
+
+'>
+
+
+<div>
+
+
+
+{/* -title- */}
+
+
+<div className=' mt-8'>
+  <h1 className=' font-bold text-[15px] ml-4 w-[80%]  '>
+    {course.title}
+  </h1>
+
+
+{/* update date- */}
+
+
+<div>
+  <p className=' ml-4 mt-6 font-bold text-sm text-green-700'>
+    {course.updatedate}
+  </p>
+</div>
+
+{/* -description- */}
+
+
+<div>
+  <p  className='w-[75%] mt-6  ml-4 text-sm'>
+    {course.description}
+  </p>
+</div>
+
+
+{/* -sections- */}
+
+
+<div>
+
+{course.lists.map(list => (
+  
+<div className=' ml-4 flex gap-6 text-sm'>
+
+<span className=' inline'>
+
+  <img
+  className=' w-6 h-6 inline-block'
+  src="https://cdn1.iconfinder.com/data/icons/warnings-and-dangers/400/Warning-02-128.png" alt="" />
+</span>
+
+
+<div>
+  <p>
+  {list}
+  </p>
+</div>
+
+</div>
+
+))}
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
 
     </div>
 </div>

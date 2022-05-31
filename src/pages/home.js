@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/navbar";
 import CoursesSlider from "../components/coursesSlider";
+import Featured from "../components/Featured";
 
 const Home = () => {
   const [right, setRight] = useState(0);
@@ -34,6 +35,12 @@ const Home = () => {
 <div>
 
   <CoursesSlider/>
+</div>
+
+
+
+<div>
+  <Featured/>
 </div>
 
 
