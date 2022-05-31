@@ -141,3 +141,16 @@ margin-left: 15px;
     transform: translateX(0px);;
   }
 }
+
+
+
+  div.tab-wrap h1:hover {
+
+border-bottom: 2px solid  blue;
+transition:  all .5s ease-in-out;
+padding-bottom: 4px;
+
+}
+
+
+

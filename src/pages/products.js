@@ -6,7 +6,7 @@ const Products = () => {
             
 <div>
 
-<div className=' grid grid-cols-12'>
+<div className=' grid grid-cols-12 ml-20'>
 
 {products.map(product => (
 
@@ -19,7 +19,7 @@ const Products = () => {
 
 
 <div 
-className=' w-[255px] h-[300px]'
+className=' w-[255px]  transition-all  duration-300   shadow-md   hover:shadow-2xl   mb-12 text-center h-[300px]'
 
 >
     <img

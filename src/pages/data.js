@@ -43,3 +43,34 @@ export const products = [
     image: "https://www.mobilefun.co.uk/blog/wp-content/uploads/2017/08/2017-08-24-12_22_32-Samsung-Galaxy-Note8-_-Galaxy-Note8-_-Samsung-UK-_-Samsung-UK.png",
   },
 ];
+
+
+
+
+// compagnis
+
+
+export const compagnis = [
+
+{
+id: 1,
+image:'https://i.ytimg.com/vi/QlxqNyR01ZE/sddefault.jpg',
+text:'why GAlaxy'
+
+
+}
+
+,
+
+{
+id:'2',
+image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBWaCHCLlxzfgfmzkwet_1U2z6GMn_6mFgQ&usqp=CAU'    
+,text:' Galaxy autosystem'
+
+
+}
+
+
+
+
+]
