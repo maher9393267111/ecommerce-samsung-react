@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -152,5 +153,59 @@ padding-bottom: 4px;
 
 }
 
+
+.topp{
+  background: antiquewhite;
+  color: black;
+  top: -1px;
+  transform: rotate3d(1, 1, 1, 45deg);
+width: 60px;
+height: 0.25rem;
+
+
+}
+
+.under{
+  width: 60px;
+  height: 0.25rem;
+  
+  background: antiquewhite;
+  color: black;
+  bottom: 22px;
+  transform: rotate3d(46, 17, -57, 45deg);
+}
+
+
+
+
+
+.slick-prev {
+   left: -7% !important; 
+  z-index: 1;
+  background-color: black !important;
+
+}
+.slick-next {
+   right: -3% !important; 
+   background-color: black !important;
+
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: -12% !important; 
+    z-index: 1;
+    background-color: black !important;
+  }
+  .slick-next {
+    right: -3% !important; 
+    background-color: black !important;
+
+    z-index: 1;
+  }
+}
+  
 
 

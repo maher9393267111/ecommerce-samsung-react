@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import {BsSuitHeart} from 'react-icons/bs'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { IoNotificationsOutline } from "react-icons/io5";
+import {categories} from './categoris'
 const Navbar = () => {
   return (
     <div>
@@ -36,6 +37,8 @@ const Navbar = () => {
         {/* -nav start- */}
 
         <div>
+
+
           <div>
             <nav className=" h-[70px] border-2">
               {/* -grid- */}
@@ -214,6 +217,89 @@ className=" relative"
             </nav>
           </div>
         </div>
+
+
+{/* ---categories nav- */}
+
+<div className=" w-screen h-[55px]  border-0 border-l-white  shadow-xl">
+<div className=" container  h-full">
+
+
+{/* -main category - */}
+
+
+<div className=" h-full flex  justify-between   translate-y-[22%]">
+
+    <div className=" w-[155px] relative">
+
+        <h2 className=" font-bold ml-2">
+            Design
+
+<span
+className="  topp h-1 absolute"
+></span>
+
+
+<span
+className=" under absolute"
+></span>
+        </h2>
+    </div>
+
+
+
+{/* ----map- categories  */}
+
+<div className="wrapepr w-[95%]">
+
+<div className=" flex relative top-[7px]  gap-4">
+
+
+{/* ----flex */}
+
+
+{categories.map((item,index)=>{
+
+
+return (
+
+<div>
+
+<h1 className="  hover:text-purple-700 text-[12px]">
+    {item}
+</h1>
+
+
+
+</div>
+
+)})}
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div >
+
+
+</div>
+
+
+
+
       </div>
     </div>
   );
