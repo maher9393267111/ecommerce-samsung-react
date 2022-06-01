@@ -3,6 +3,7 @@ import {AiOutlineStar} from 'react-icons/ai'
 import Slider from 'react-slick';
 import {courses} from './coursedata'
 import { useState,useEffect } from 'react';
+import './styles/courseslider.css'
 const CoursesSlider = () => {
 
 

@@ -1,0 +1,17 @@
+.slick-prev {
+    left: -7% !important; 
+   z-index: 1;
+   background-color: black !important;
+ 
+ }
+ .slick-next {
+    right: 5% !important; 
+    background-color: black !important;
+ 
+   z-index: 1;
+ }
+
+ .slick-disabled {
+    display: none !important;
+  }
+  
