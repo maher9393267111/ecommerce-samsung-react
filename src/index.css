@@ -25,6 +25,11 @@ code {
  }
 
 
+
+
+
+
+
  .menu-toggle > span  {
 
   @apply h-[7px]  w-[44px] absolute     bg-black z-10 transition-all duration-500 ease-in-out;
@@ -37,6 +42,16 @@ code {
   z-index: 100;
 }
 
+
+.maxg > h1 {
+
+min-width: 25% !important;
+
+
+background-color: aquamarine;
+
+
+}
 
 
 
@@ -209,3 +224,30 @@ height: 0.25rem;
   
 
 
+.cat-card > div {
+
+  border:  2px solid  aquamarine;
+height: 120px;
+
+}
+
+.prev-btn{
+  left: -67px;
+  top: 114px;
+  background: black;
+  color: antiquewhite;
+  border-radius: 40px;
+  padding: 6px;
+  z-index: 11;
+}
+
+
+.next-btn{
+  right: -1px;
+  top: 114px;
+  background: black;
+  color: antiquewhite;
+  border-radius: 40px;
+  padding: 6px;
+  z-index: 11;
+}
