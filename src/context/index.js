@@ -8,6 +8,7 @@ export const HomeContext = createContext();
 const HomeProvider = (props) => {						
 
     const [name, setName] = useState("maher");
+    const [slide, setSlide] = useState(false);
 
 
     
@@ -29,7 +30,7 @@ const HomeProvider = (props) => {
 
 return (						
 <Fragment>						
-<HomeContext.Provider value={{ name, setName 
+<HomeContext.Provider value={{ name, setName ,slide, setSlide
 
 
 

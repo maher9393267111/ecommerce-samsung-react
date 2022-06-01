@@ -256,3 +256,32 @@ font-weight: bold;
   padding: 6px;
   z-index: 11;
 }
+
+.drop-list > li{
+
+
+  @apply hover:bg-blue-700 hover:text-white
+}
+
+.t{
+  background-color: aqua;
+ transition: 1s cubic-bezier(.2,0,.38,.9)
+  
+}
+
+
+.dis{
+
+margin-left: -55px;
+  display: none;
+}
+
+
+.parent{
+
+width: calc(100% + 28rem);
+transform: translateX(-28rem);
+
+
+
+}

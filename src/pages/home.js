@@ -6,6 +6,7 @@ import CoursesSlider from "../components/coursesSlider";
 import Featured from "../components/Featured";
 import Textslider from "../components/Textslider";
 import InstructorsSlider from "../components/instructorsSlider";
+import Main from "../components/allcourses";
 
 const Home = () => {
   const [right, setRight] = useState(0);
@@ -54,6 +55,15 @@ const Home = () => {
   <InstructorsSlider/>
 </div>
 
+
+{/* -all courses- */}
+
+
+<div>
+
+<Main/>
+
+</div>
 
 
 </div>
