@@ -3,6 +3,8 @@ import Sidefilter from "./sidefilter";
 import {useState, useContext} from "react";
 import {HomeContext} from "../../context/index";
 import {motion } from 'framer-motion'
+import { Rating } from "@mui/material";
+import Ratings from "./filtercomponents/rating";
 const Filter = () => {
 
     const { slide, setSlide } = useContext(HomeContext);
@@ -20,19 +22,26 @@ const Filter = () => {
 
 
 
-<div className={ ` flex  gap-2 t  ${slide ? 'parent ' : 'w-[100%]'}  `}>
+<div className={ ` flex  gap-2 t  min-h-[300px] ${slide ? 'parent ' : 'w-[100%]'}  `}>
 
 {/* --filter side-- */}
-<div className={ `  bg-blue-500    w-[28rem]  sm:hidden lg:block   `}>
 
-sidebar
+<div className={ `     w-[28rem]  sm:hidden lg:block   `}>
+
+{/* <Sidefilter/> */}
+
+<Ratings/>
+
 
 </div>
 
 
+
+
+
 {/* ---all courses- */}
 
-<div className={` ${slide ? 'w-screen ' : 'flex-1'}    bg-red-400 flex-1`}>
+<div className={` ${slide ? 'w-screen ' : 'flex-1'}     flex-1`}>
 
 all courses
 

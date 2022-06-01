@@ -264,7 +264,7 @@ font-weight: bold;
 }
 
 .t{
-  background-color: aqua;
+  
  transition: 1s cubic-bezier(.2,0,.38,.9)
   
 }
