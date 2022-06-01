@@ -216,8 +216,8 @@ height: 0.25rem;
   }
   .slick-next {
     right: -3% !important; 
+  
     background-color: black !important;
-
     z-index: 1;
   }
 }
@@ -226,16 +226,21 @@ height: 0.25rem;
 
 .cat-card > div {
 
-  border:  2px solid  aquamarine;
-height: 120px;
+  border:  2px solid  #D3D3D3;
+height: 80px;
+text-align: center;
+padding-top: 15px;
+font-weight: bold;
+
+
 
 }
 
 .prev-btn{
   left: -67px;
   top: 114px;
-  background: black;
-  color: antiquewhite;
+ 
+ font-size: 30px;
   border-radius: 40px;
   padding: 6px;
   z-index: 11;
@@ -245,8 +250,8 @@ height: 120px;
 .next-btn{
   right: -1px;
   top: 114px;
-  background: black;
-  color: antiquewhite;
+
+  font-size: 30px;
   border-radius: 40px;
   padding: 6px;
   z-index: 11;
