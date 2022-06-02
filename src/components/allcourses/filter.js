@@ -12,8 +12,29 @@ import Price from "./filtercomponents/price";
 import Threecourse from "./threecourse";
 import Middlesec from "./middlesec";
 import ALLSectionBaginate from "./ALLSectionBaginate";
+
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+
+
+
+
+
 const Filter = () => {
   const { slide, setSlide } = useContext(HomeContext);
+
+  const [closeside, setCloseside] = useState(false);
+
+
+ 
+
 
   return (
     <div className=" ">
@@ -21,7 +42,7 @@ const Filter = () => {
         {/* ---flex- */}
         <div className="  overflow-hidden">
           <div
-            className={` flex  gap-2 t  min-h-[300px] ${
+            className={` flex  gap-2 t  min-h-[300px] lg:${
               slide ? "parent " : "w-[100%]"
             }  `}
           >
@@ -76,6 +97,47 @@ const Filter = () => {
             </div>
           </div>
         </div>
+
+
+
+
+{/* --Drawer- */}
+{ slide ?  'true ' : ' false'}
+
+ <div className=" sm:block  lg:hidden">
+
+<Drawer
+className="       lg:hidden  ]"
+            anchor="right"
+            open={slide}
+              //onClose={setCloseside(false)}
+            sx={{
+           
+                width: "300px",
+            }}
+          >
+
+
+
+<h1 
+
+onClick={() => setSlide(false)}
+
+>
+
+
+jkjk  {slide}
+</h1>
+
+              </Drawer> 
+
+
+
+
+</div> 
+
+
+
       </div>
     </div>
   );
