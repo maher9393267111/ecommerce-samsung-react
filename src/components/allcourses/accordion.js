@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs'
 
-const Sidefilter = ({children}) => {
+const Sidefilter = ({children,title}) => {
     return (
         <div className='w-[66%]'>
            <div>
@@ -21,7 +21,10 @@ const Sidefilter = ({children}) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Accordion 1</Typography>
+          <Typography
+          style={{ fontSize: '1.5rem', fontWeight: 'bold' }}
+          
+          >{title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
         

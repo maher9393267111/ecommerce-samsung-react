@@ -1,21 +1,24 @@
-import React from 'react';
-import Sidefilter from '../sidefilter';
+import React from "react";
+import Accordion from "../accordion";
+import Starsflexitem from "./starsflexitem";
 const Ratings = () => {
-    return (
-        <div>
-            
-<Sidefilter>
+  return (
+    <div>
+      <Accordion title="ratings">
+        
+        <Starsflexitem/>
+        <Starsflexitem/>
+        <Starsflexitem/>
+        <Starsflexitem/>
+        <Starsflexitem/>
+        <Starsflexitem/>
 
-rating
-
-
-</Sidefilter>
 
 
 
-
-        </div>
-    );
-}
+      </Accordion >
+    </div>
+  );
+};
 
 export default Ratings;
