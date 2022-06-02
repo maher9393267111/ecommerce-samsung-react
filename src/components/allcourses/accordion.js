@@ -10,7 +10,7 @@ const Sidefilter = ({children,title , changewidth=false}) => {
         <div className={ `  ${changewidth ? 'w-[88%]' : 'w-[66%]'} `}>
            <div>
                
-               {changewidth ? 'true' : ' false'}
+              
                <div>
 
                <Accordion

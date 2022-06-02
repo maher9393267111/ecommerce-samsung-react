@@ -42,7 +42,7 @@ const Filter = () => {
         {/* ---flex- */}
         <div className="  overflow-hidden">
           <div
-            className={` flex  gap-2 t  min-h-[300px] lg:${
+            className={` flex  gap-2 t  min-h-[300px] ${
               slide ? "parent " : "w-[100%]"
             }  `}
           >

@@ -48,7 +48,7 @@ const All = () => {
                           onClick={() => setSlide(!slide)}
                           className="text-sm font-semibold"
                         >
-                          Filter{" "}
+                          Filter{" "}  {slide ? "Hide" : "Show"}
                         </p>
                       </div>
                     </div>

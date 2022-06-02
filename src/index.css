@@ -287,6 +287,21 @@ transform: translateX(-28rem);
 }
 
 
+
+@media screen and (max-width: 768px) {
+  .parent{
+
+    width: calc(100% + 15rem);
+    transform: translateX(1px);
+
+
+  }
+}
+
+
+
+
+
 .stars > img{
 
 @apply w-4 h-4
