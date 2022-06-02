@@ -5,11 +5,12 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs'
 
-const Sidefilter = ({children,title}) => {
+const Sidefilter = ({children,title , changewidth=false}) => {
     return (
-        <div className='w-[66%]'>
+        <div className={ `  ${changewidth ? 'w-[88%]' : 'w-[66%]'} `}>
            <div>
                
+               {changewidth ? 'true' : ' false'}
                <div>
 
                <Accordion

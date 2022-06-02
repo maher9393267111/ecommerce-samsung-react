@@ -1,10 +1,10 @@
 import React from "react";
 import Accordion from "../accordion";
 import Starsflexitem from "./starsflexitem";
-const Ratings = () => {
+const Ratings = ({changewidth}) => {
   return (
     <div>
-      <Accordion title="ratings">
+      <Accordion title="ratings"  changewidth={changewidth}>
         
         <Starsflexitem/>
         <Starsflexitem/>

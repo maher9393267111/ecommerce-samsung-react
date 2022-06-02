@@ -126,8 +126,37 @@ onClick={() => setSlide(false)}
 >
 
 
-jkjk  {slide}
+Close  {slide}
 </h1>
+
+<div>
+
+<div className={`     `}>
+              {/* <Sidefilter/> */}
+
+              <Ratings changewidth={true} />
+
+              <hr className=" w-[333px] mt-4 mb-4" />
+
+              <Videofilter />
+
+              <hr className=" w-[200px] mt-4 mb-4" />
+
+              <Topics />
+
+              <hr className=" w-[200px] mt-4 mb-4" />
+
+              <Subcategory />
+
+              <hr className=" w-[200px] mt-4 mb-4" />
+
+              <Price />
+            </div>
+</div>
+
+
+
+
 
               </Drawer> 
 
